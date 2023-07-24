@@ -1,33 +1,13 @@
-script-nya..
+<?php
 
-<!DOCTYPE html>
+Skoneksi=mysqli_connect("localhost","root","", "logindb");
 
-<html>
+//Cek koneksi if (mysqli_connect_error()){
 
-<head><title>Membuat Form Login dengan Javascript</title> <link rel="stylesheet" type="text/css" href="style.css">
+echo "Koneksi database gagal:", mysqli_connect_error();
 
-</head>
+}else{
 
-<body>
+echo "berhasil";
 
-<br/>
-
-<br/>
-
-<center><h2>FORM LOGIN</h2></center>
-
-<br/>
-
-<div class="login">
-
-<br/>
-
-<form action = "login.php" method="post" onSubmit = "return validasi()">
-
-<div>
-
-<label>Username: </label>
-
-10
-
-<input type="text" name= "username" id="username" />
+?>
